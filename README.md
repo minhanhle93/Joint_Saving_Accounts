@@ -47,8 +47,12 @@ To interact with my deployed smart contract, I have completed the following step
 
 3. All funds have been successfully deposited into my contract. I have tested the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, I have used the `contractBalance` function to verify that the funds were withdrawn from my contract. I have also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
 
-* Withdrawal 1 - **5 ether** into `accountOne`, Account balance, `lastToWithdraw` and `lastWithdrawAmount` logs. 
+* Withdrawal 1 - **5 ether** into `accountOne`, `contractBalance`, `lastToWithdraw` and `lastWithdrawAmount` logs. 
 ![](Execution_Results/Withdraw5ethAccount1.png)
 
-* Withdrawal 2 -  **10 ether** into `accountTwo`, Account balance, `lastToWithdraw` and `lastWithdrawAmount` logs. 
+We can see that there is 11 ETH in wei left in the balance, last to withdraw is account 1, and withdraw amount was 5 ETH in wei.
+
+* Withdrawal 2 - **10 ether** into `accountTwo`, `contractBalance`, `lastToWithdraw` and `lastWithdrawAmount` logs. 
 ![](Execution_Results/Withdraw10ethAccount2.png)
+
+We can see that there is 1 ETH in wei left in the balance, last to withdraw is account 2, and withdraw amount was 10 ETH in wei.
