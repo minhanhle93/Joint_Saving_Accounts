@@ -12,7 +12,7 @@ The smart contract will enable the creation of joint savings accounts by accepti
 
 * A folder named `Execution_Results` that contains all execution result images. These images confirm that the deposit and withdrawal transactions, which are designed to test the `JointSavings` functionality in the JavaScript VM, worked as expected.
 
-## Compile and Deploy Your Contract in the JavaScript VM (now called Remix VM Merged)
+## Compile and Deploy the Contract in Remix VM Merged (used to be JavaScript VM)
 
 1. I have successfully compiled the smart contract.
 
@@ -36,19 +36,19 @@ To interact with my deployed smart contract, I have completed the following step
 
 2. Tested the deposit functionality of the smart contract by sending the following amounts of ether. After each transaction, I have used the `contractBalance` function to verify that the funds were added to my contract:
 
-    * Transaction 1 - Send **1 ether** as wei.
-    ![](Execution_Results/1eth.png)
+* Transaction 1 - Send **1 ether** as wei.
+![](Execution_Results/1eth.png)
 
-    * Transaction 2 - Send **10 ether** as wei.
-    ![](Execution_Results/10eth.png)
+* Transaction 2 - Send **10 ether** as wei.
+![](Execution_Results/10eth.png)
 
-    * Transaction 3 - Send **5 ether.**
-    ![](Execution_Results/5eth.png)
+* Transaction 3 - Send **5 ether.**
+![](Execution_Results/5eth.png)
 
 3. All funds have been successfully deposited into my contract. I have tested the contract’s withdrawal functionality by withdrawing 5 ether into `accountOne` and 10 ether into `accountTwo`. After each transaction, I have used the `contractBalance` function to verify that the funds were withdrawn from my contract. I have also, use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
 
-    * Withdrawal 1 - **5 ether** into `accountOne`, Account balance, `lastToWithdraw` and `lastWithdrawAmount` logs. 
-    ![](Execution_Results/Withdraw5ethAccount1.png)
+* Withdrawal 1 - **5 ether** into `accountOne`, Account balance, `lastToWithdraw` and `lastWithdrawAmount` logs. 
+![](Execution_Results/Withdraw5ethAccount1.png)
 
-    * Withdrawal 2 -  **10 ether** into `accountTwo`, Account balance, `lastToWithdraw` and `lastWithdrawAmount` logs. 
-    ![](Execution_Results/Withdraw10ethAccount2.png)
+* Withdrawal 2 -  **10 ether** into `accountTwo`, Account balance, `lastToWithdraw` and `lastWithdrawAmount` logs. 
+![](Execution_Results/Withdraw10ethAccount2.png)
